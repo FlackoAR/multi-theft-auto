@@ -6,3 +6,17 @@ for i, v in ipairs(getResources()) do
     startResource(v) 
 end
 
+-------------------------
+
+
+Side: meta.xml
+
+Developer: Malone
+
+Folder: meta.xml
+
+
+meta>
+	<info author="Malone" type="script" description="START All Resources Once"/>
+	
+	<script src="server.slua" type="client"/>
