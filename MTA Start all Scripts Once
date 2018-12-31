@@ -20,3 +20,5 @@ meta>
 	<info author="Malone" type="script" description="START All Resources Once"/>
 	
 	<script src="server.slua" type="client"/>
+
+-- WARN: Make sure you give the resources ACL Control.
