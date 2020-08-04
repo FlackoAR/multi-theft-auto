@@ -1,8 +1,4 @@
 
--- Folder: c_anticheat.lua
-
--- Developer: Malone
-
 -- Side: Client
 
 
@@ -32,10 +28,6 @@ end
 
 -------------------------------------
 
--- Folder: c_element.lua
-
--- Developer: Malone
-
 -- Side: Client
 
 
@@ -63,9 +55,6 @@ end
 
 Side: Server
 
-Folder: s_anticheat.lua
-
-Developer: Malone
 
 
 function showSpeedToAdmins(velocity)
@@ -122,10 +111,6 @@ setTimer(scanMoneyHacks, 3600000, 0) -- Every 60 minutes
 ------------------------------------------
 
 -- Side: Server
-
--- Folder: s_element.lua
-
--- Developer: Malone
 
 local secretHandle = 'some_shit_that_is_really_secured'
 
@@ -261,12 +246,9 @@ secretHandle = genHandle()
 
 Side: meta.xml
 
-Developer: Malone
-
-Folder: meta.xml
 
 
-meta>
+<meta>
 	<info author="Sam MTA Scripting Team" type="script" description="Anticheat System"/>
 	
 	<script src="c_anticheat.lua" type="client"/>
