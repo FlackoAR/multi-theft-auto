@@ -1,0 +1,22 @@
+--Author: Malone
+
+function startDuty(player)
+    local Clan = getElementData(player, "Clan")
+	if (Clan == "Army") then
+	local armyteam = getTeamFromName("Army")
+		setPlayerTeam(player, armyteam)
+		setElementData(player, "Job Rank", "None")
+removePedJetPack(player)     
+        setElementData(player, "Job", "Army")
+		setPlayerNametagColor(player, 8, 92, 4)
+		setElementModel(player, 287)
+ 
+	setElementFrozen(player, true)
+setPedWeaponSlot(player,0)
+setTimer(function() setElementFrozen(player, false) end, 7000, 1)
+	occupation = nil
+	triggerEvent("startDuty", player)
+		exports["(SAEG)Messages"]:sendClientMessage("You are now employed as Army  Group Job.", player, 8, 92, 4)
+	end
+end
+addCommandHandler("gojob", startDuty)
